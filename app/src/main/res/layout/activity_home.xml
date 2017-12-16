@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sample.com.sample2.HomeActivity">
+
+ <android.support.design.widget.AppBarLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <android.support.v7.widget.Toolbar
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         app:title="Home"
+         app:navigationIcon="@mipmap/ic_kunsh"
+         />
+ </android.support.design.widget.AppBarLayout>
+ <FrameLayout
+ android:id="@+id/content"
+ android:layout_width="match_parent"
+ android:layout_height="0dp"
+ android:layout_weight="1">
+
+     <TextView
+         android:id="@+id/message"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="@dimen/activity_horizontal_margin"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:layout_marginTop="@dimen/activity_vertical_margin"
+         android:text="@string/title_home"
+         android:textSize="18sp"
+         android:textStyle="bold" />
+     <Spinner
+         android:id="@+id/spinner"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="150dp"
+         android:layout_marginRight="16dp"
+         android:layout_marginTop="45dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="16dp"
+         android:layout_marginRight="16dp"
+         android:layout_marginTop="45dp"
+         android:text="Select Child"
+         android:textSize="18sp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/add_btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="150dp"
+         android:layout_marginRight="16dp"
+         android:layout_marginTop="80dp"
+         android:text="Add Child" />
+
+     <Button
+         android:id="@+id/track_btn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="145dp"
+         android:layout_marginRight="16dp"
+         android:layout_marginTop="250dp"
+         android:visibility="gone"
+         android:text="Track" />
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="18dp"
+         android:layout_marginRight="160dp"
+         android:layout_marginTop="100dp"
+         android:text="Status"
+         android:visibility="gone"
+         android:textSize="18sp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/status"
+         android:layout_width="265dp"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="100dp"
+         android:layout_marginRight="100dp"
+         android:layout_marginTop="100dp"
+         android:text="Status is Here"
+         android:textSize="18sp"
+         android:visibility="gone" />
+
+     <TextView
+         android:id="@+id/textView5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="18dp"
+         android:layout_marginRight="160dp"
+         android:layout_marginTop="130dp"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:visibility="gone"
+         android:text="Location" />
+
+     <TextView
+         android:id="@+id/locn"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="100dp"
+         android:layout_marginRight="60dp"
+         android:layout_marginTop="130dp"
+         android:text="Last Seen in ..."
+         android:textSize="16sp"
+         android:visibility="gone" />
+
+     <TextView
+         android:id="@+id/textView6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="18dp"
+         android:layout_marginRight="160dp"
+         android:layout_marginTop="245dp"
+         android:textSize="16sp"
+         android:visibility="gone"
+         android:text="Last Seen on" />
+
+     <TextView
+         android:id="@+id/ttime"
+         android:layout_width="246dp"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="@dimen/activity_vertical_margin"
+         android:layout_marginLeft="125dp"
+         android:layout_marginRight="80dp"
+         android:layout_marginTop="245dp"
+         android:text="Retrieving Data..."
+         android:textColor="@color/red_new"
+         android:textSize="16sp"
+         android:visibility="gone" />
+
+ </FrameLayout>
+
+    <TextView
+        android:id="@+id/timers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.BottomNavigationView
+ android:id="@+id/navigation"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_gravity="bottom"
+ app:itemTextColor="#000"
+ android:background="#fff"
+ app:itemIconTint="#000"
+ app:menu="@menu/navigation"/>
+
+     </LinearLayout>
